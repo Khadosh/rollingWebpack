@@ -1,5 +1,7 @@
 import _ from 'lodash';
-import test from './test'
+import Auto from './classes/Auto';
+
+import './index.scss';
 
 function component() {
   const element = document.createElement('div');
@@ -11,3 +13,6 @@ function component() {
 }
 
 document.body.appendChild(component());
+
+
+const auto = new Auto('chevrolet', 'corsa', 'verde');
