@@ -1,18 +1,14 @@
-import _ from 'lodash';
 import Auto from './classes/Auto';
+import {apagar, encender, resultado} from './elementos'; 
 
-import './index.scss';
+const auto = new Auto('Chevrolet', 'Corsa', 'verde');
 
-function component() {
-  const element = document.createElement('div');
+encender.addEventListener('click', () => {
+  auto.encender();
+  auto.estaEncendio(resultado);
+});
 
-  // Lodash, currently included via a script, is required for this line to work
-  element.innerHTML = _.join(['Hello', 'Webpack', 'test', 'asdf'], ' ');
-
-  return element;
-}
-
-document.body.appendChild(component());
-
-
-const auto = new Auto('chevrolet', 'corsa', 'verde');
+apagar.addEventListener('click', () => {
+  auto.apagar();
+  auto.estaEncendio(resultado);
+});
