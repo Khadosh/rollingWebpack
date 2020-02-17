@@ -1,13 +1,28 @@
-h1 {
-  font-weight: bold;
-  color: red
+body {
+  // La url de abajo la carga webpack con file-loader
+  background-image: url(./assets/background.jpg);
+  background-size: cover;
 }
 
-.test {
-  height: 800px;
-  width: 600px;
-  // La url de abajo la carga webpack con file-loader
-  background-image: url(./assets/background.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+h1 {
+  font-weight: bold;
+  color: red;
+  text-align: center;
+}
+
+.peli {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px 20px;
+  width: 300px;
+
+  h2 {
+    height: 60px;
+    text-align: center;
+  }
+
+  img {
+    height: 430px;
+    width: 300px;
+  }
 }
