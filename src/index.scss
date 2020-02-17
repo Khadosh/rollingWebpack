@@ -2,3 +2,12 @@ h1 {
   font-weight: bold;
   color: red
 }
+
+.test {
+  height: 800px;
+  width: 600px;
+  // La url de abajo la carga webpack con file-loader
+  background-image: url(./assets/background.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}

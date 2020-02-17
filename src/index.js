@@ -1,14 +1,5 @@
-import Auto from './classes/Auto';
-import {apagar, encender, resultado} from './elementos'; 
+import './index.scss';
 
-const auto = new Auto('Chevrolet', 'Corsa', 'verde');
+const title = document.getElementById('title');
 
-encender.addEventListener('click', () => {
-  auto.encender();
-  auto.estaEncendio(resultado);
-});
-
-apagar.addEventListener('click', () => {
-  auto.apagar();
-  auto.estaEncendio(resultado);
-});
+title.innerText = 'Hola Mundo';
