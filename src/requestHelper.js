@@ -3,7 +3,6 @@ export function request(url, callback) {
 
   //Creamos el objeto request
   var xhr = new XMLHttpRequest();
-  xhr.withCredentials = false;
 
   //Le decimos que hacer cuando tenga actualizaciones (esta es la parte asíncrona)
   xhr.addEventListener("readystatechange", function() {
